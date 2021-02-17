@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".Features.StudentCRUD.UpdateStudentInfo.PatientUpdateDialogFragment">
+
+    <EditText
+        android:id="@+id/patientNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/patient_name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/registrationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientNameEditText"
+        android:hint="@string/registration_no"
+        />
+
+    <EditText
+        android:id="@+id/diseaseEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationEditText"
+        android:hint="@string/disease"
+        />
+
+    <EditText
+        android:id="@+id/villageEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseEditText"
+        android:hint="@string/village"
+        android:inputType="text"/>
+
+
+    <EditText
+        android:id="@+id/contactEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/villageEditText"
+        android:hint="@string/contact"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/tabletsEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactEditText"
+        android:hint="@string/tablets"
+        android:inputType="text"/>
+
+
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabletsEditText"
+        android:hint="@string/gender"
+        android:inputType="text"/>
+
+
+    <Button
+        android:id="@+id/updateStudentInfoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/genderEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cancelButton"
+        android:text="@string/update"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/genderEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/createButton"
+        android:text="@string/cancel_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
